@@ -15,6 +15,11 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePage {
+	// This function can initialize 1 object of the BasePage class
+	// And then return this object on another class
+	public static BasePage getBasePageInstance() {
+		return new BasePage();
+	}
 
 	public void openPageUrl(WebDriver driver, String pageUrl) {
 		driver.get(pageUrl);
@@ -119,7 +124,7 @@ public class BasePage {
 		getWebElement(driver, locator).click();
 	}
 
-	public void senkeyToElement(WebDriver driver, String locator, String valueToInput) {
+	public void sendkeyToElement(WebDriver driver, String locator, String valueToInput) {
 		WebElement element = getWebElement(driver, locator);
 		element.clear();
 		element.sendKeys(valueToInput);

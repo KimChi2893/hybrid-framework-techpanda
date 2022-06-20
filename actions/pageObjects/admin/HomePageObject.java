@@ -1,6 +1,8 @@
 package pageObjects.admin;
 
-public class HomePageObject {
+import commons.BasePage;
+
+public class HomePageObject extends BasePage{
 	// The function manipulates with elements
 	
 	public void clickToRegisterButton() {
