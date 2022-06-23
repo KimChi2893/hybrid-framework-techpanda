@@ -1,23 +1,25 @@
 package com.techpanda.account;
 
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
+import commons.BasePage;
 import commons.BaseTest;
-import pageFactory.user.HomePageObject;
-import pageFactory.user.LoginPageObject;
-import pageFactory.user.MyDashboardPageObject;
+import pageObjects.user.HomePageObject;
+import pageObjects.user.LoginPageObject;
+import pageObjects.user.MyDashboardPageObject;
 
-
-public class Level_05_Selenium_Page_Factory extends BaseTest{
+public class Level_06_Page_Generator_I extends BaseTest{
 	WebDriver driver;
-	String projectPath = System.getProperty("user.dir");
 	HomePageObject homePage;
 	LoginPageObject loginPage;
 	MyDashboardPageObject myDashboardPage;
@@ -31,7 +33,6 @@ public class Level_05_Selenium_Page_Factory extends BaseTest{
 
 	@Test
 	public void TC_01_Login_Empty_Email_And_Password() {
-		// 2 - HomePage -> new LoginPage
 		homePage.clickToMyAccountLink();
 		loginPage = new LoginPageObject(driver);
 
@@ -45,7 +46,6 @@ public class Level_05_Selenium_Page_Factory extends BaseTest{
 
 	@Test
 	public void TC_02_Login_Invalid_Email() {
-		// 3 - HomePage -> new LoginPage
 		homePage.clickToMyAccountLink();
 		loginPage = new LoginPageObject(driver);
 

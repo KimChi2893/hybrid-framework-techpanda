@@ -7,26 +7,16 @@ import pageUIs.user.HomePageUI;
 
 public class HomePageObject extends BasePage{
 
-	// Initialized function - Constructor
-	// Call first when initializing a class
-	// Same name with the class
-	// Don't have the returned data type
-	// Have params or not
-	// 1 class has 1 initialized function or more
-	// If don't write clearly the initialized function, calling this function while running
-	// => Default function of the class (the initialized empty function: function name/ not having the body) 
+	WebDriver driver;
 	
-	private WebDriver driver;
-	
-	// Map driver between 2 classes
-	// this: Access to the variable belonging the class (global) in the case being same the variable name belonging the function (local)
 	public HomePageObject(WebDriver driver) {
 		this.driver = driver;
 	}
 	
-	public void clickToMyAccountLink() {
+	public LoginPageObject clickToMyAccountLink() {
 		waitForElementClickable(driver, HomePageUI.MY_ACCOUNT_LINK);
 		clickToElement(driver, HomePageUI.MY_ACCOUNT_LINK);
+		return PageGeneratorManager.getLoginPage(driver);
 	}
 
 }

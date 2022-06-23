@@ -23,10 +23,10 @@ public class LoginPageObject extends BasePage{
 		sendkeyToElement(driver, LoginPageUI.PASSWORD_TEXTBOX, password);		
 	}
 
-	public void clickToLoginButton() {
+	public MyDashboardPageObject clickToLoginButton() {
 		waitForElementClickable(driver, LoginPageUI.LOGIN_BUTTON);
 		clickToElement(driver, LoginPageUI.LOGIN_BUTTON);
-		
+		return PageGeneratorManager.getMyDashboardPageObject(driver);		
 	}
 
 	public String getEmailAddressEmptyErrorMessage() {

@@ -61,7 +61,7 @@ public class Level_04_Multiple_Browser extends BaseTest{
 		homePage.clickToMyAccountLink();
 		loginPage = new LoginPageObject(driver);
 
-		loginPage.inputToEmailAddressTextbox("auto_test" + randomNumber() + "@live.com");
+		loginPage.inputToEmailAddressTextbox("auto_test" + getRandomNumber() + "@live.com");
 		loginPage.inputToPasswordTextbox("123456");
 		loginPage.clickToLoginButton();
 
@@ -74,7 +74,7 @@ public class Level_04_Multiple_Browser extends BaseTest{
 		homePage.clickToMyAccountLink();
 		loginPage = new LoginPageObject(driver);
 
-		loginPage.inputToEmailAddressTextbox("auto_test" + randomNumber() + "@live.com");
+		loginPage.inputToEmailAddressTextbox("auto_test" + getRandomNumber() + "@live.com");
 		loginPage.inputToPasswordTextbox("123");
 		loginPage.clickToLoginButton();
 
@@ -88,7 +88,7 @@ public class Level_04_Multiple_Browser extends BaseTest{
 		loginPage = new LoginPageObject(driver);
 
 		loginPage.inputToEmailAddressTextbox("automationfc.vn@gmail.com");
-		loginPage.inputToPasswordTextbox(String.valueOf(randomNumber()));
+		loginPage.inputToPasswordTextbox(String.valueOf(getRandomNumber()));
 		loginPage.clickToLoginButton();
 
 		Assert.assertEquals(loginPage.getEmailAddressOrPasswordIncorrectErrorMessage(), "Invalid login or password.");
@@ -114,10 +114,4 @@ public class Level_04_Multiple_Browser extends BaseTest{
 	public void afterClass() {
 		driver.quit();
 	}
-
-	private int randomNumber() {
-		Random rand = new Random();
-		return rand.nextInt(999999);
-	}
-
 }
