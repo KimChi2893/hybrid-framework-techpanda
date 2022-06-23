@@ -6,7 +6,7 @@ import commons.BasePage;
 import pageUIs.user.LoginPageUI;
 
 public class LoginPageObject extends BasePage{
-	WebDriver driver;
+	private WebDriver driver;
 	
 	public LoginPageObject(WebDriver driver) {
 		this.driver = driver;
@@ -44,7 +44,7 @@ public class LoginPageObject extends BasePage{
 		return getElementText(driver, LoginPageUI.EMAIL_ADDRESS_INVALID_ERROR_MESSAGE);
 	}
 
-	public String getEmailAddressIncorrectErrorMessage() {
+	public String getEmailAddressOrPasswordIncorrectErrorMessage() {
 		waitForElementVisible(driver, LoginPageUI.EMAIL_ADDRESS_PASSWORD_INCORRECT_ERROR_MESSAGE);
 		return getElementText(driver, LoginPageUI.EMAIL_ADDRESS_PASSWORD_INCORRECT_ERROR_MESSAGE);
 	}
@@ -54,10 +54,6 @@ public class LoginPageObject extends BasePage{
 		return getElementText(driver, LoginPageUI.PASSWORD_INVALID_ERROR_MESSAGE);
 	}
 
-	public String getPasswordIncorrectErrorMessage() {
-		waitForElementVisible(driver, LoginPageUI.EMAIL_ADDRESS_PASSWORD_INCORRECT_ERROR_MESSAGE);
-		return getElementText(driver, LoginPageUI.EMAIL_ADDRESS_PASSWORD_INCORRECT_ERROR_MESSAGE);
-	}
 
 
 }

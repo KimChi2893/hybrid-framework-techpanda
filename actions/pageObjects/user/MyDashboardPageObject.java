@@ -7,19 +7,16 @@ import commons.BasePage;
 import pageUIs.user.MyDashboardPageUI;
 
 public class MyDashboardPageObject extends BasePage {
-	WebDriver driver;
+	private WebDriver driver;
+
+	
 
 	public MyDashboardPageObject(WebDriver driver) {
 		this.driver = driver;
 	}
 
-	public boolean isDisplayedUsername(String username) {
+	public boolean isContactInfoDisplayed(String contactInfor) {
 		waitForElementVisible(driver, MyDashboardPageUI.CONTACT_INFOR_TEXT);
-		return getElementText(driver, MyDashboardPageUI.CONTACT_INFOR_TEXT).contains(username);
-	}
-
-	public boolean isDisplayedEmailAddress(String emaiAddress) {
-		waitForElementVisible(driver, MyDashboardPageUI.CONTACT_INFOR_TEXT);
-		return getElementText(driver, MyDashboardPageUI.CONTACT_INFOR_TEXT).contains(emaiAddress);
+		return getElementText(driver, MyDashboardPageUI.CONTACT_INFOR_TEXT).contains(contactInfor);
 	}
 }

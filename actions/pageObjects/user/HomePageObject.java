@@ -16,7 +16,7 @@ public class HomePageObject extends BasePage{
 	// If don't write clearly the initialized function, calling this function while running
 	// => Default function of the class (the initialized empty function: function name/ not having the body) 
 	
-	WebDriver driver;
+	private WebDriver driver;
 	
 	// Map driver between 2 classes
 	// this: Access to the variable belonging the class (global) in the case being same the variable name belonging the function (local)

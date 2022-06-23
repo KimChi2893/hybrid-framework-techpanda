@@ -26,17 +26,15 @@ public class Level_03_Page_Object_Pattern_Part_I {
 		System.setProperty("webdriver.gecko.driver", projectPath + "/browserDrivers/geckodriver");
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
+		// 1 - Opening the Url => new HomePage
 		driver.get("http://live.techpanda.org/");
-
-		// 1 - Opening the Url will go to the HomePage
-		// 2 - Wanting use the HomePageObject must initialize it
-
 		homePage = new HomePageObject(driver);
 	}
 
 	@Test
-	public void TC_01_LoginWithEmptyEmailAndPassword() {
-		// HomePage -> Click on the My Account link -> Go to the LoginPage
+	public void TC_01_Login_Empty_Email_And_Password() {
+		// 2 - HomePage -> new LoginPage
 		homePage.clickToMyAccountLink();
 		loginPage = new LoginPageObject(driver);
 
@@ -49,8 +47,8 @@ public class Level_03_Page_Object_Pattern_Part_I {
 	}
 
 	@Test
-	public void TC_02_LoginWithInvalidEmail() {
-		// HomePage -> Click on the My Account link -> Go to the LoginPage
+	public void TC_02_Login_Invalid_Email() {
+		// 3 - HomePage -> new LoginPage
 		homePage.clickToMyAccountLink();
 		loginPage = new LoginPageObject(driver);
 
@@ -61,8 +59,8 @@ public class Level_03_Page_Object_Pattern_Part_I {
 	}
 
 	@Test
-	public void TC_03_LoginWithIncorrectEmail() {
-		// HomePage -> Click on the My Account link -> Go to the LoginPage
+	public void TC_03_Login_Incorrect_Email() {
+		// 4 - HomePage -> new LoginPage
 		homePage.clickToMyAccountLink();
 		loginPage = new LoginPageObject(driver);
 
@@ -70,12 +68,12 @@ public class Level_03_Page_Object_Pattern_Part_I {
 		loginPage.inputToPasswordTextbox("123456");
 		loginPage.clickToLoginButton();
 
-		Assert.assertEquals(loginPage.getEmailAddressIncorrectErrorMessage(), "Invalid login or password.");
+		Assert.assertEquals(loginPage.getEmailAddressOrPasswordIncorrectErrorMessage(), "Invalid login or password.");
 	}
 
 	@Test
-	public void TC_04_LoginWithInvalidPassword() {
-		// HomePage -> Click on the My Account link -> Go to the LoginPage
+	public void TC_04_Login_Invalid_Password() {
+		// 5 - HomePage -> new LoginPage
 		homePage.clickToMyAccountLink();
 		loginPage = new LoginPageObject(driver);
 
@@ -87,31 +85,32 @@ public class Level_03_Page_Object_Pattern_Part_I {
 	}
 
 	@Test
-	public void TC_05_LoginWithIncorrectPassword() {
-		// HomePage -> Click on the My Account link -> Go to the LoginPage
-		homePage.clickToMyAccountLink();
-		loginPage = new LoginPageObject(driver);
-
-		loginPage.inputToEmailAddressTextbox("auto_test" + randomNumber() + "@live.com");
-		loginPage.inputToPasswordTextbox(randomNumber() + "");
-		loginPage.clickToLoginButton();
-
-		Assert.assertEquals(loginPage.getPasswordIncorrectErrorMessage(), "Invalid login or password.");
-	}
-
-	@Test
-	public void TC_06_LoginWithValidEmailAndPassword() {
-		// HomePage -> Click on the My Account link -> Go to the LoginPage
+	public void TC_05_Login_Incorrect_Password() {
+		// 6 - HomePage -> new LoginPage
 		homePage.clickToMyAccountLink();
 		loginPage = new LoginPageObject(driver);
 
 		loginPage.inputToEmailAddressTextbox("automationfc.vn@gmail.com");
+		loginPage.inputToPasswordTextbox(String.valueOf(randomNumber()));
+		loginPage.clickToLoginButton();
+
+		Assert.assertEquals(loginPage.getEmailAddressOrPasswordIncorrectErrorMessage(), "Invalid login or password.");
+	}
+
+	@Test
+	public void TC_06_Login_Valid_Email_And_Password() {
+		// 7 - HomePage -> new LoginPage
+		homePage.clickToMyAccountLink();	
+		loginPage = new LoginPageObject(driver);
+		
+		loginPage.inputToEmailAddressTextbox("automationfc.vn@gmail.com");
 		loginPage.inputToPasswordTextbox("123123");
 		loginPage.clickToLoginButton();
 		
+		// 8 - LoginPage -> new MyDashboardPage
 		myDashboardPage = new MyDashboardPageObject(driver);
-		Assert.assertTrue(myDashboardPage.isDisplayedUsername("Automation FC"));
-		Assert.assertTrue(myDashboardPage.isDisplayedEmailAddress("automationfc.vn@gmail.com"));
+		Assert.assertTrue(myDashboardPage.isContactInfoDisplayed("Automation FC"));
+		Assert.assertTrue(myDashboardPage.isContactInfoDisplayed("automationfc.vn@gmail.com"));
 	}
 
 	@AfterClass
