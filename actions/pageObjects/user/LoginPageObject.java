@@ -18,15 +18,9 @@ public class LoginPageObject extends BasePage{
 		
 	}
 
-	public void inputToPasswordTextbox(String password) {
+	public void inputToPasswordTextbox(String password) {// Open MyDashboard page
 		waitForElementVisible(driver, LoginPageUI.PASSWORD_TEXTBOX);
 		sendkeyToElement(driver, LoginPageUI.PASSWORD_TEXTBOX, password);		
-	}
-
-	public MyDashboardPageObject clickToLoginButton() {
-		waitForElementClickable(driver, LoginPageUI.LOGIN_BUTTON);
-		clickToElement(driver, LoginPageUI.LOGIN_BUTTON);
-		return PageGeneratorManager.getMyDashboardPageObject(driver);		
 	}
 
 	public String getEmailAddressEmptyErrorMessage() {
@@ -54,6 +48,9 @@ public class LoginPageObject extends BasePage{
 		return getElementText(driver, LoginPageUI.PASSWORD_INVALID_ERROR_MESSAGE);
 	}
 
-
-
+	public MyDashboardPageObject clickToLoginButton() {
+		waitForElementClickable(driver, LoginPageUI.LOGIN_BUTTON);
+		clickToElement(driver, LoginPageUI.LOGIN_BUTTON);
+		return PageGeneratorManager.getMyDashboardPageObject(driver);		
+	}
 }

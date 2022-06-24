@@ -96,7 +96,7 @@ public class Level_06_Page_Generator_III extends BaseTest{
 	
 	@Test
 	public void TC_07_Update_Account_Information() {
-		accountInformationPageObject = myDashboardPage.clickToAccountInformationLink();
+		accountInformationPageObject = myDashboardPage.openAccountInformationPage(driver);
 		accountInformationPageObject.enterToFirstNameTextbox("Software");
 		accountInformationPageObject.enterToLastNameTextbox("Testing");
 		accountInformationPageObject.enterToEmailAddressTextbox("softwaretest" + getRandomNumber() + "@gmail.net");

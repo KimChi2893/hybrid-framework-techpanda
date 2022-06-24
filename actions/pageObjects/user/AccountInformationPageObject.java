@@ -35,10 +35,10 @@ public class AccountInformationPageObject extends BasePage{
 		sendkeyToElement(driver, AccountInformationPageUI.CURRENT_PASSWORD_TEXTBOX, currentPassword);
 		
 	}
-
+	
 	public MyDashboardPageObject clickToSaveButton() {
 		waitForElementClickable(driver, AccountInformationPageUI.SAVE_BUTTON);
 		clickToElement(driver, AccountInformationPageUI.SAVE_BUTTON);
 		return PageGeneratorManager.getMyDashboardPageObject(driver);
-	}	
+	}
 }
