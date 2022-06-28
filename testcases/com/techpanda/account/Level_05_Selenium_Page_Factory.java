@@ -1,6 +1,5 @@
 package com.techpanda.account;
 
-import java.util.Random;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;

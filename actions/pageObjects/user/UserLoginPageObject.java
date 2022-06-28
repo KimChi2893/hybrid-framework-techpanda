@@ -3,12 +3,13 @@ package pageObjects.user;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
+import pageObjects.navigation.PageGeneratorManager;
 import pageUIs.user.LoginPageUI;
 
-public class LoginPageObject extends BasePage{
+public class UserLoginPageObject extends BasePage{
 	private WebDriver driver;
 	
-	public LoginPageObject(WebDriver driver) {
+	public UserLoginPageObject(WebDriver driver) {
 		this.driver = driver;
 	}
 
@@ -51,6 +52,6 @@ public class LoginPageObject extends BasePage{
 	public MyDashboardPageObject clickToLoginButton() {
 		waitForElementClickable(driver, LoginPageUI.LOGIN_BUTTON);
 		clickToElement(driver, LoginPageUI.LOGIN_BUTTON);
-		return PageGeneratorManager.getMyDashboardPageObject(driver);		
+		return PageGeneratorManager.getMyDashboardPage(driver);		
 	}
 }

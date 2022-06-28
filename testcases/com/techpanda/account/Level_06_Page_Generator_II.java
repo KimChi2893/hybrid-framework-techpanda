@@ -1,34 +1,27 @@
 package com.techpanda.account;
 
-import java.util.Random;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import commons.BasePage;
 import commons.BaseTest;
-import pageObjects.user.HomePageObject;
-import pageObjects.user.LoginPageObject;
+import pageObjects.user.UserHomePageObject;
+import pageObjects.user.UserLoginPageObject;
 import pageObjects.user.MyDashboardPageObject;
 
 public class Level_06_Page_Generator_II extends BaseTest{
 	WebDriver driver;
-	HomePageObject homePage;
-	LoginPageObject loginPage;
+	UserHomePageObject homePage;
+	UserLoginPageObject loginPage;
 	MyDashboardPageObject myDashboardPage;
 
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName);	
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 	}
 
 	@Test

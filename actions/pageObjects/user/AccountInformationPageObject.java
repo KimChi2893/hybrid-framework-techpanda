@@ -2,14 +2,16 @@ package pageObjects.user;
 
 import org.openqa.selenium.WebDriver;
 
-import commons.BasePage;
+import pageObjects.navigation.PageGeneratorManager;
+import pageObjects.navigation.SideBarMyAccountPageObject;
 import pageUIs.user.AccountInformationPageUI;
 
-public class AccountInformationPageObject extends BasePage{
+public class AccountInformationPageObject extends SideBarMyAccountPageObject{
 
 	WebDriver driver;
 	
 	public AccountInformationPageObject(WebDriver driver) {
+		super(driver);
 		this.driver = driver;
 	}
 
@@ -39,6 +41,6 @@ public class AccountInformationPageObject extends BasePage{
 	public MyDashboardPageObject clickToSaveButton() {
 		waitForElementClickable(driver, AccountInformationPageUI.SAVE_BUTTON);
 		clickToElement(driver, AccountInformationPageUI.SAVE_BUTTON);
-		return PageGeneratorManager.getMyDashboardPageObject(driver);
+		return PageGeneratorManager.getMyDashboardPage(driver);
 	}
 }

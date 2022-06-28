@@ -7,16 +7,16 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import commons.BaseTest;
+import pageObjects.navigation.PageGeneratorManager;
 import pageObjects.user.AccountInformationPageObject;
-import pageObjects.user.HomePageObject;
-import pageObjects.user.LoginPageObject;
+import pageObjects.user.UserHomePageObject;
+import pageObjects.user.UserLoginPageObject;
 import pageObjects.user.MyDashboardPageObject;
-import pageObjects.user.PageGeneratorManager;
 
 public class Level_06_Page_Generator_III extends BaseTest{
 	WebDriver driver;
-	HomePageObject homePage;
-	LoginPageObject loginPage;
+	UserHomePageObject homePage;
+	UserLoginPageObject loginPage;
 	MyDashboardPageObject myDashboardPage;
 	AccountInformationPageObject accountInformationPageObject;
 
@@ -24,7 +24,7 @@ public class Level_06_Page_Generator_III extends BaseTest{
 	@BeforeClass
 	public void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName);	
-		homePage = PageGeneratorManager.getHomePage(driver);
+		homePage = PageGeneratorManager.getUserHomePage(driver);
 	}
 
 	@Test
@@ -96,7 +96,7 @@ public class Level_06_Page_Generator_III extends BaseTest{
 	
 	@Test
 	public void TC_07_Update_Account_Information() {
-		accountInformationPageObject = myDashboardPage.openAccountInformationPage(driver);
+		accountInformationPageObject = myDashboardPage.openAccountInformationPage();
 		accountInformationPageObject.enterToFirstNameTextbox("Software");
 		accountInformationPageObject.enterToLastNameTextbox("Testing");
 		accountInformationPageObject.enterToEmailAddressTextbox("softwaretest" + getRandomNumber() + "@gmail.net");

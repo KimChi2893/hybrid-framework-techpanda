@@ -9,16 +9,15 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import commons.BasePage;
-import pageObjects.user.HomePageObject;
-import pageObjects.user.LoginPageObject;
+import pageObjects.user.UserHomePageObject;
+import pageObjects.user.UserLoginPageObject;
 import pageObjects.user.MyDashboardPageObject;
 
 public class Level_03_Page_Object_Pattern_Part_I {
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
-	HomePageObject homePage;
-	LoginPageObject loginPage;
+	UserHomePageObject homePage;
+	UserLoginPageObject loginPage;
 	MyDashboardPageObject myDashboardPage;
 
 	@BeforeClass
@@ -29,14 +28,14 @@ public class Level_03_Page_Object_Pattern_Part_I {
 		
 		// 1 - Opening the Url => new HomePage
 		driver.get("http://live.techpanda.org/");
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 	}
 
 	@Test
 	public void TC_01_Login_Empty_Email_And_Password() {
 		// 2 - HomePage -> new LoginPage
 		homePage.clickToMyAccountLink();
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 
 		loginPage.inputToEmailAddressTextbox("");
 		loginPage.inputToPasswordTextbox("");
@@ -50,7 +49,7 @@ public class Level_03_Page_Object_Pattern_Part_I {
 	public void TC_02_Login_Invalid_Email() {
 		// 3 - HomePage -> new LoginPage
 		homePage.clickToMyAccountLink();
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 
 		loginPage.inputToEmailAddressTextbox("123@456.789");
 		loginPage.inputToPasswordTextbox("123456");
@@ -62,7 +61,7 @@ public class Level_03_Page_Object_Pattern_Part_I {
 	public void TC_03_Login_Incorrect_Email() {
 		// 4 - HomePage -> new LoginPage
 		homePage.clickToMyAccountLink();
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 
 		loginPage.inputToEmailAddressTextbox("auto_test" + randomNumber() + "@live.com");
 		loginPage.inputToPasswordTextbox("123456");
@@ -75,7 +74,7 @@ public class Level_03_Page_Object_Pattern_Part_I {
 	public void TC_04_Login_Invalid_Password() {
 		// 5 - HomePage -> new LoginPage
 		homePage.clickToMyAccountLink();
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 
 		loginPage.inputToEmailAddressTextbox("auto_test" + randomNumber() + "@live.com");
 		loginPage.inputToPasswordTextbox("123");
@@ -88,7 +87,7 @@ public class Level_03_Page_Object_Pattern_Part_I {
 	public void TC_05_Login_Incorrect_Password() {
 		// 6 - HomePage -> new LoginPage
 		homePage.clickToMyAccountLink();
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 
 		loginPage.inputToEmailAddressTextbox("automationfc.vn@gmail.com");
 		loginPage.inputToPasswordTextbox(String.valueOf(randomNumber()));
@@ -101,7 +100,7 @@ public class Level_03_Page_Object_Pattern_Part_I {
 	public void TC_06_Login_Valid_Email_And_Password() {
 		// 7 - HomePage -> new LoginPage
 		homePage.clickToMyAccountLink();	
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		
 		loginPage.inputToEmailAddressTextbox("automationfc.vn@gmail.com");
 		loginPage.inputToPasswordTextbox("123123");

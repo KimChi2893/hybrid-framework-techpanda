@@ -3,6 +3,7 @@ package pageObjects.user;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
+import pageObjects.navigation.PageGeneratorManager;
 import pageUIs.user.RegisterPageUI;
 
 public class RegisterPageObject extends BasePage{
@@ -40,6 +41,6 @@ public class RegisterPageObject extends BasePage{
 	public MyDashboardPageObject clickToRegisterButton() {
 		waitForElementClickable(driver, RegisterPageUI.REGISTER_BUTTON);
 		clickToElement(driver, RegisterPageUI.REGISTER_BUTTON);
-		return PageGeneratorManager.getMyDashboardPageObject(driver);
+		return PageGeneratorManager.getMyDashboardPage(driver);
 	}
 }

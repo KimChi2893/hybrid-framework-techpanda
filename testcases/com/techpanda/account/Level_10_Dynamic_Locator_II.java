@@ -8,16 +8,19 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import commons.BaseTest;
 import pageObjects.navigation.PageGeneratorManager;
+import pageObjects.user.AboutUsPageObject;
 import pageObjects.user.AccountInformationPageObject;
 import pageObjects.user.UserHomePageObject;
 import pageObjects.user.UserLoginPageObject;
+import pageObjects.user.MyAccountPageObject;
 import pageObjects.user.MyApplicationPageObject;
 import pageObjects.user.MyDashboardPageObject;
 import pageObjects.user.MyOrderPageObject;
 import pageObjects.user.MyProductReviewPageObject;
 import pageObjects.user.RegisterPageObject;
+import pageObjects.user.SearchTermPageObject;
 
-public class Level_07_Switch_Page extends BaseTest {
+public class Level_10_Dynamic_Locator_II extends BaseTest {
 
 	@Parameters("browser")
 	@BeforeClass
@@ -27,24 +30,7 @@ public class Level_07_Switch_Page extends BaseTest {
 	}
 
 	@Test
-	public void TC_01_Register_Account() {
-		homePage.clickToAccountLink();
-		registerPage = homePage.clickToRegisterLink();
-		registerPage.inputToFirstNameTextbox(firstName);
-		registerPage.inputToLastNameTextbox(lastName);
-		
-		registerPage.inputToEmailAddressTextbox(emailAddress);
-		registerPage.inputToPasswordTextbox(password);
-		registerPage.inputToConfirmPasswordTextbox(password);		
-		myDashboardPage = registerPage.clickToRegisterButton();
-		Assert.assertTrue(myDashboardPage.isMessageRegisteredDisplayed());
-		Assert.assertTrue(myDashboardPage.isContactInfoDisplayed(firstName + " " + lastName));
-		Assert.assertTrue(myDashboardPage.isContactInfoDisplayed(emailAddress));
-		
-		homePage = myDashboardPage.clickToUserLogoutLink(driver);
-	}
-	@Test
-	public void TC_02_Login_Valid_Email_And_Password() {
+	public void TC_01_Login() {
 		loginPage = homePage.clickToMyAccountLink();
 		loginPage.inputToEmailAddressTextbox(emailAddress);
 		loginPage.inputToPasswordTextbox(password);
@@ -55,52 +41,44 @@ public class Level_07_Switch_Page extends BaseTest {
 	}
 
 	@Test
-	public void TC_03_Update_Navigate_Page() {
+	public void TC_02_SideBar_Page() {
 		// My Dashboard -> Account Information
-		accountInformationPageObject = myDashboardPage.openAccountInformationPage();
-
+		accountInformationPageObject = (AccountInformationPageObject) myDashboardPage.openSideBarLinkByPageNames("Account Information");
+		
 		// Account Information -> My Dashboard
-		myDashboardPage = accountInformationPageObject.openMyDashboardPage();
+		myDashboardPage = (MyDashboardPageObject) accountInformationPageObject.openSideBarLinkByPageNames("Account Dashboard");
 
-		// My Dashboard -> My Orders
-		myOrderPage = myDashboardPage.openMyOrderPage();
+		// My Dashboard -> My Orders		
+		myOrderPage = (MyOrderPageObject) myDashboardPage.openSideBarLinkByPageNames("My Orders");
 
 		// My Orders -> My Applications
-		myApplicationPage = myOrderPage.openMyApplicationPage();
+		myApplicationPage = (MyApplicationPageObject) myOrderPage.openSideBarLinkByPageNames("My Applications");
 
-		// My Applications -> My Product Review
-		myProductReviewPage = myApplicationPage.openMyProductReviewPage();
-
-		// My Product Review -> My Order
-		myOrderPage = myProductReviewPage.openMyOrderPage();
-
-		// My Order -> My Product Review
-		myProductReviewPage = myOrderPage.openMyProductReviewPage();
-
-		// My Product Review -> My Applications
-		myApplicationPage = myProductReviewPage.openMyApplicationPage();
+		
+		//...
 	}
 
 	@AfterClass
 	public void afterClass() {
 		driver.quit();
 	}
-	
+
 	WebDriver driver;
 	String lastName = "test";
-	String firstName = "Cindy";
-	String password = "246810";
-	String emailAddress = "auto_test" + getRandomNumber() + "@live.com";
-	
+	String firstName = "cindy";
+	String password = "123456";
+	String emailAddress = "abc123456@gmail.com";
+
 	UserHomePageObject homePage;
 	UserLoginPageObject loginPage;
+	AboutUsPageObject aboutUsPage;
 	MyOrderPageObject myOrderPage;
 	RegisterPageObject registerPage;
+	MyAccountPageObject myAccountPage;
+	SearchTermPageObject searchTermPage;
 	MyDashboardPageObject myDashboardPage;
 	MyApplicationPageObject myApplicationPage;
 	MyProductReviewPageObject myProductReviewPage;
 	AccountInformationPageObject accountInformationPageObject;
-	
-	
 
 }
