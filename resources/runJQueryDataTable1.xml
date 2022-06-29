@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite parallel="false" name="Tech Panda">
+<suite parallel="false" name="jquery">
   <parameter name="url" value="https://www.jqueryscript.net/demo/CRUD-Data-Grid-Plugin-jQuery-Quickgrid/" />
 
   <test name="Run on FIREFOX browser">
   <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.jquery.dataTable.Level_12_DataTable"/>  
+      <class name="com.jquery.dataTable.Level_12_Data_Table_Part_I"/>  
   
     </classes>
   </test>
