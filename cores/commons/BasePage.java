@@ -19,11 +19,10 @@ import pageObjects.navigation.FooterContainerPageObject;
 import pageObjects.navigation.PageGeneratorManager;
 import pageObjects.user.UserHomePageObject;
 import pageUIs.admin.AdminBasePageUI;
+import pageUIs.jQuery.HomePageUI;
 import pageUIs.user.UserBasePageUI;
 
 public class BasePage {
-	// This function can initialize 1 object of the BasePage class
-	// And then return this object on another class
 	public static BasePage getBasePageInstance() {
 		return new BasePage();
 	}
@@ -119,10 +118,7 @@ public class BasePage {
 		locator = String.format(locator, (Object[])dynamicLocator);
 		return locator;	
 	}
-	// This locator receiving the inputted params is id/ class/ name/ xpath/ css
-	// The convention of by locator is id=/ class=/ xpath=/ css=
-	// id=/ Id=/ ID=/ iD=
-	// This function only uses for this class so can setting its access modifier is private
+
 	private By getByLocator(String locator) {
 		By by = null;
 		
@@ -134,7 +130,7 @@ public class BasePage {
 		}else if(locator.startsWith("name=") || locator.startsWith("Name=") || locator.startsWith("NAME=")) {
 			by = By.name(locator.substring(5));
 			
-		}else if(locator.startsWith("CSS=") || locator.startsWith("Css=") || locator.startsWith("CSS=")) {
+		}else if(locator.startsWith("css=") || locator.startsWith("Css=") || locator.startsWith("CSS=")) {
 			by = By.cssSelector(locator.substring(4));
 			
 		}else if(locator.startsWith("xpath=") || locator.startsWith("Xpath=") || locator.startsWith("XPATH=") || locator.startsWith("Xpath=")) {
@@ -154,7 +150,7 @@ public class BasePage {
 	public List<WebElement> getListElement(WebDriver driver, String locator) {
 		return driver.findElements(getByLocator(locator));
 	}
-
+	
 	public void clickToElement(WebDriver driver, String locator) {
 		getWebElement(driver, locator).click();
 	}
@@ -392,6 +388,11 @@ public class BasePage {
 
 	}
 	
+	public void waitForElementVisible(WebDriver driver, WebElement element) {
+		new WebDriverWait(driver, longTimeout).until(ExpectedConditions.elementToBeClickable(element));
+
+	}
+	
 	public void waitForElementVisible(WebDriver driver, String locator, String... dynamicLocator) {
 		new WebDriverWait(driver, longTimeout).until(ExpectedConditions.visibilityOfElementLocated(getByLocator(castRestParameter(locator, dynamicLocator))));
 
@@ -409,8 +410,23 @@ public class BasePage {
 		new WebDriverWait(driver, longTimeout).until(ExpectedConditions.elementToBeClickable(getByLocator(locator)));
 	}
 	
+	public void waitForElementClickable(WebDriver driver, WebElement element) {
+		new WebDriverWait(driver, longTimeout).until(ExpectedConditions.elementToBeClickable(element));
+	}
+	
 	public void waitForElementClickable(WebDriver driver, String locator, String... dynamicLocator) {
 		new WebDriverWait(driver, longTimeout).until(ExpectedConditions.elementToBeClickable(getByLocator(castRestParameter(locator, dynamicLocator))));
+	}
+
+	public void uploadMultitpleFiles(WebDriver driver, String... fileNames) {
+		String uploadFilePath = GlobalConstants.UPLOAD_PATH;
+		String fullFileName = "";
+		for (String file : fileNames) {
+			fullFileName = fullFileName + uploadFilePath + file + "\n";
+		}
+		
+		fullFileName = fullFileName.trim();
+		getWebElement(driver, HomePageUI.ADD_FILE_BUTTON).sendKeys(fullFileName);
 	}
 
 	public FooterContainerPageObject getFooterContainerPage(WebDriver driver) {
