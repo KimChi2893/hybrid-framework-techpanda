@@ -103,7 +103,7 @@ public class Level_06_Page_Generator_III extends BaseTest{
 		
 		accountInformationPageObject.enterToCurrentPasswordTextbox("123123");
 		myDashboardPage = accountInformationPageObject.clickToSaveButton();
-		Assert.assertTrue(myDashboardPage.isAccountInformationMessageSavedDisplayed());
+		Assert.assertEquals(myDashboardPage.getSaveSuccessAccountInformationMessage(), "The account information has been saved.");
 	}
 
 	@AfterClass

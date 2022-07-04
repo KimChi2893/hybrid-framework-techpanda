@@ -40,7 +40,7 @@ public class Level_08_Page_Navigation extends BaseTest {
 		registerPage.inputToPasswordTextbox(password);
 		registerPage.inputToConfirmPasswordTextbox(password);
 		myDashboardPage = registerPage.clickToRegisterButton();
-		Assert.assertTrue(myDashboardPage.isMessageRegisteredDisplayed());
+		Assert.assertEquals(myDashboardPage.getRegisterSuccessMessage(), "Thank you for registering with Main Website Store.");
 		Assert.assertTrue(myDashboardPage.isContactInfoDisplayed(firstName + " " + lastName));
 		Assert.assertTrue(myDashboardPage.isContactInfoDisplayed(emailAddress));
 

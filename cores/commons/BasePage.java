@@ -2,6 +2,7 @@ package commons;
 
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -288,6 +289,25 @@ public class BasePage {
 		return getWebElement(driver, castRestParameter(locator, dynamicLocator)).isDisplayed();
 	}
 
+	public boolean isElementUndisplayed(WebDriver driver, String locator) {
+		overrideImplicitTimeout(driver, shortTimeout);
+		List<WebElement> elements = getListElement(driver, locator);
+		int elementSize = elements.size();
+		overrideImplicitTimeout(driver, longTimeout);
+		
+		if (elementSize == 0) {
+			return true;
+		} else if (elementSize > 0 && !elements.get(0).isDisplayed()) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	public void overrideImplicitTimeout(WebDriver driver, long timeOut) {
+		driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
+	}
+	
 	public boolean isElementEnabled(WebDriver driver, String locator) {
 		return getWebElement(driver, locator).isEnabled();
 	}
@@ -402,6 +422,16 @@ public class BasePage {
 		new WebDriverWait(driver, longTimeout).until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(locator)));
 	}
 	
+	public void waitForElementUndisplayed(WebDriver driver, String locator) {
+		WebDriverWait explicit = new WebDriverWait(driver, shortTimeout);
+		overrideImplicitTimeout(driver, shortTimeout);
+		explicit.until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(locator)));
+		overrideImplicitTimeout(driver, longTimeout);
+	}
+	/*
+	 * Wait for the element undisplayed in DOM or not in DOM and override implicit timeout
+	 */
+	
 	public void waitForElementInvisible(WebDriver driver, String locator, String... dynamicLocator) {
 		new WebDriverWait(driver, longTimeout).until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(castRestParameter(locator, dynamicLocator))));
 	}
@@ -467,4 +497,5 @@ public class BasePage {
 	}
 
 	private long longTimeout = GlobalConstants.LONG_TIMEOUT;
+	private long shortTimeout = GlobalConstants.SHORT_TIMEOUT;
 }
