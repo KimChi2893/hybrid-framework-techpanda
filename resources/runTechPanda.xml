@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Tech Panda">
+	<suite-files>
+		<suite-file path="runTechPandaUser.xml" />
+		<suite-file path="runTechPandaAdmin.xml" />
+	</suite-files> 
+</suite>

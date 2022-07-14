@@ -3,6 +3,8 @@ package commons;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
@@ -10,8 +12,16 @@ import org.testng.Reporter;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
-	WebDriver driver;
-
+	private WebDriver driver;
+	protected final Log log;
+	
+	protected BaseTest() {
+		log = LogFactory.getLog(getClass());
+	}
+	public WebDriver getDriverInstance() {
+		return this.driver;
+	}
+	
 	protected WebDriver getBrowserDriver(String browserName) {
 		BrowserList browser = BrowserList.valueOf(browserName.toUpperCase());
 		switch (browser) {
@@ -69,11 +79,11 @@ public class BaseTest {
 		boolean pass = true;
 		try {
 			Assert.assertTrue(condition);
-			System.out.println(" -------------------------- PASSED -------------------------- ");			
+			log.info("---------------------------------PASSED---------------------------------");
 		} catch (Throwable e) {
-			System.out.println(" -------------------------- FAILED -------------------------- ");
+			log.info("---------------------------------FAILED---------------------------------");
 			pass = false;
-			// Add lỗi vào ReportNG
+			
 			VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
 			Reporter.getCurrentTestResult().setThrowable(e);
 		}
@@ -83,11 +93,12 @@ public class BaseTest {
 	protected boolean verifyFalse(boolean condition) {
 		boolean pass = true;
 		try {
-			Assert.assertFalse(condition);
-			System.out.println(" -------------------------- PASSED -------------------------- ");			
+			Assert.assertFalse(condition);	
+			log.info("---------------------------------PASSED---------------------------------");
 		} catch (Throwable e) {
-			System.out.println(" -------------------------- FAILED -------------------------- ");
+			log.info("---------------------------------FAILED---------------------------------");
 			pass = false;
+			
 			VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
 			Reporter.getCurrentTestResult().setThrowable(e);
 		}
@@ -98,10 +109,11 @@ public class BaseTest {
 		boolean pass = true;
 		try {
 			Assert.assertEquals(actual, expected);
-			System.out.println(" -------------------------- PASSED -------------------------- ");
+			log.info("---------------------------------PASSED---------------------------------");
 		} catch (Throwable e) {
+			log.info("---------------------------------FAILED---------------------------------");
 			pass = false;
-			System.out.println(" -------------------------- FAILED -------------------------- ");
+			
 			VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
 			Reporter.getCurrentTestResult().setThrowable(e);
 		}

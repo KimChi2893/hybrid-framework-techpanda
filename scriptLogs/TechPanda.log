@@ -1,0 +1,401 @@
+[2022-07-04 15:59:37,999] Register - Step 01: Click the Account link
+[2022-07-04 15:59:38,314] Register - Step 02: Click the Register link
+[2022-07-04 15:59:42,406] Register - Step 03: Enter the data for Firstname textbox with value is 'Cindy'
+[2022-07-04 15:59:42,472] Register - Step 04: Enter the data for Lastname textbox with value is 'test'
+[2022-07-04 15:59:42,525] Register - Step 05: Enter the data for Email Address textbox with value is 'auto_test219967@live.com'
+[2022-07-04 15:59:42,569] Register - Step 06: Enter the data for Password textbox with value is '246810'
+[2022-07-04 15:59:42,617] Register - Step 07: Enter the data for Confirm password textbox with value is '246810'
+[2022-07-04 15:59:42,663] Register - Step 08: Click the Register button
+[2022-07-04 15:59:44,386] Register - Step 09: Verify the register success message is displayed
+[2022-07-04 15:59:44,429] Register - Step 10: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-04 15:59:44,471] Register - Step 11: Verify the email address 'auto_test219967@live.com' is displayed
+[2022-07-04 15:59:44,506] Register - Step 12: Click Logout link
+[2022-07-04 15:59:46,036] Login - Step 01: Click 'My Account' link
+[2022-07-04 15:59:47,233] Login - Step 02: Enter the data for Email Address textbox with value is 'auto_test219967@live.com'
+[2022-07-04 15:59:47,321] Login - Step 03: Enter the data for Password textbox with value is '246810'
+[2022-07-04 15:59:47,395] Login - Step 04: Click Login button
+[2022-07-04 15:59:48,658] Login - Step 05: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-04 15:59:48,713] Login - Step 06: Verify the email address 'auto_test219967@live.com' is displayed
+[2022-07-04 17:27:22,735] Register - Step 01: Click the Account link
+[2022-07-04 17:27:23,081] Register - Step 02: Click the Register link
+[2022-07-04 17:27:27,405] Register - Step 03: Enter the data for Firstname textbox with value is 'Cindy'
+[2022-07-04 17:27:27,503] Register - Step 04: Enter the data for Lastname textbox with value is 'test'
+[2022-07-04 17:27:27,562] Register - Step 05: Enter the data for Email Address textbox with value is 'auto_test53974@live.com'
+[2022-07-04 17:27:27,619] Register - Step 06: Enter the data for Password textbox with value is '246810'
+[2022-07-04 17:27:27,681] Register - Step 07: Enter the data for Confirm password textbox with value is '246810'
+[2022-07-04 17:27:27,776] Register - Step 08: Click the Register button
+[2022-07-04 17:27:29,787] Register - Step 09: Verify the register success message is displayed
+[2022-07-04 17:27:29,833] ---------------------------------PASSED---------------------------------
+[2022-07-04 17:27:29,833] Register - Step 10: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-04 17:27:29,872] ---------------------------------PASSED---------------------------------
+[2022-07-04 17:27:29,872] Register - Step 11: Verify the email address 'auto_test53974@live.com' is displayed
+[2022-07-04 17:27:29,906] ---------------------------------FAILED---------------------------------
+[2022-07-04 17:27:29,906] Register - Step 12: Click Logout link
+[2022-07-04 17:27:31,479] Login - Step 01: Click 'My Account' link
+[2022-07-04 17:27:32,612] Login - Step 02: Enter the data for Email Address textbox with value is 'auto_test53974@live.com'
+[2022-07-04 17:27:32,687] Login - Step 03: Enter the data for Password textbox with value is '246810'
+[2022-07-04 17:27:32,752] Login - Step 04: Click Login button
+[2022-07-04 17:27:34,089] Login - Step 05: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-04 17:27:34,134] ---------------------------------PASSED---------------------------------
+[2022-07-04 17:27:34,135] Login - Step 06: Verify the email address 'auto_test53974@live.com' is displayed
+[2022-07-04 17:27:34,174] ---------------------------------FAILED---------------------------------
+[2022-07-04 17:36:28,836] Register - Step 01: Click the Account link
+[2022-07-04 17:36:29,146] Register - Step 02: Click the Register link
+[2022-07-04 17:36:33,417] Register - Step 03: Enter the data for Firstname textbox with value is 'Cindy'
+[2022-07-04 17:36:33,493] Register - Step 04: Enter the data for Lastname textbox with value is 'test'
+[2022-07-04 17:36:33,554] Register - Step 05: Enter the data for Email Address textbox with value is 'auto_test601524@live.com'
+[2022-07-04 17:36:33,610] Register - Step 06: Enter the data for Password textbox with value is '246810'
+[2022-07-04 17:36:33,667] Register - Step 07: Enter the data for Confirm password textbox with value is '246810'
+[2022-07-04 17:36:33,760] Register - Step 08: Click the Register button
+[2022-07-04 17:36:35,570] Register - Step 09: Verify the register success message is displayed
+[2022-07-04 17:36:35,621] ---------------------------------PASSED---------------------------------
+[2022-07-04 17:36:35,621] Register - Step 10: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-04 17:36:35,658] ---------------------------------PASSED---------------------------------
+[2022-07-04 17:36:35,658] Register - Step 11: Verify the email address 'auto_test601524@live.com' is displayed
+[2022-07-04 17:36:35,692] ---------------------------------FAILED---------------------------------
+[2022-07-04 17:36:35,693] Register - Step 12: Click Logout link
+[2022-07-04 17:36:38,027] Login - Step 01: Click 'My Account' link
+[2022-07-04 17:36:39,575] Login - Step 02: Enter the data for Email Address textbox with value is 'auto_test601524@live.com'
+[2022-07-04 17:36:39,648] Login - Step 03: Enter the data for Password textbox with value is '246810'
+[2022-07-04 17:36:39,701] Login - Step 04: Click Login button
+[2022-07-04 17:36:41,088] Login - Step 05: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-04 17:36:41,134] ---------------------------------PASSED---------------------------------
+[2022-07-04 17:36:41,134] Login - Step 06: Verify the email address 'auto_test601524@live.com' is displayed
+[2022-07-04 17:36:41,168] ---------------------------------FAILED---------------------------------
+[2022-07-04 17:40:33,588] Register - Step 01: Click the Account link
+[2022-07-04 17:40:33,893] Register - Step 02: Click the Register link
+[2022-07-04 17:40:37,681] Register - Step 03: Enter the data for Firstname textbox with value is 'Cindy'
+[2022-07-04 17:40:37,896] Register - Step 04: Enter the data for Lastname textbox with value is 'test'
+[2022-07-04 17:40:37,965] Register - Step 05: Enter the data for Email Address textbox with value is 'auto_test355230@live.com'
+[2022-07-04 17:40:38,029] Register - Step 06: Enter the data for Password textbox with value is '246810'
+[2022-07-04 17:40:38,079] Register - Step 07: Enter the data for Confirm password textbox with value is '246810'
+[2022-07-04 17:40:38,125] Register - Step 08: Click the Register button
+[2022-07-04 17:40:39,999] Register - Step 09: Verify the register success message is displayed
+[2022-07-04 17:40:40,050] ---------------------------------PASSED---------------------------------
+[2022-07-04 17:40:40,050] Register - Step 10: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-04 17:40:40,091] ---------------------------------PASSED---------------------------------
+[2022-07-04 17:40:40,092] Register - Step 11: Verify the email address 'auto_test355230@live.com' is displayed
+[2022-07-04 17:40:40,126] ---------------------------------FAILED---------------------------------
+[2022-07-04 17:40:40,127] Register - Step 12: Click Logout link
+[2022-07-04 17:40:41,751] Login - Step 01: Click 'My Account' link
+[2022-07-04 17:40:42,955] Login - Step 02: Enter the data for Email Address textbox with value is 'auto_test355230@live.com'
+[2022-07-04 17:40:43,043] Login - Step 03: Enter the data for Password textbox with value is '246810'
+[2022-07-04 17:40:43,109] Login - Step 04: Click Login button
+[2022-07-04 17:40:44,410] Login - Step 05: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-04 17:40:44,454] ---------------------------------PASSED---------------------------------
+[2022-07-04 17:40:44,454] Login - Step 06: Verify the email address 'auto_test355230@live.com' is displayed
+[2022-07-04 17:40:44,488] ---------------------------------FAILED---------------------------------
+[2022-07-04 17:41:56,955] Register - Step 01: Click the Account link
+[2022-07-04 17:41:57,262] Register - Step 02: Click the Register link
+[2022-07-04 17:42:00,673] Register - Step 03: Enter the data for Firstname textbox with value is 'Cindy'
+[2022-07-04 17:42:00,745] Register - Step 04: Enter the data for Lastname textbox with value is 'test'
+[2022-07-04 17:42:00,829] Register - Step 05: Enter the data for Email Address textbox with value is 'auto_test482904@live.com'
+[2022-07-04 17:42:00,890] Register - Step 06: Enter the data for Password textbox with value is '246810'
+[2022-07-04 17:42:01,139] Register - Step 07: Enter the data for Confirm password textbox with value is '246810'
+[2022-07-04 17:42:01,312] Register - Step 08: Click the Register button
+[2022-07-04 17:42:03,263] Register - Step 09: Verify the register success message is displayed
+[2022-07-04 17:42:03,322] ---------------------------------PASSED---------------------------------
+[2022-07-04 17:42:03,322] Register - Step 10: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-04 17:42:03,382] ---------------------------------PASSED---------------------------------
+[2022-07-04 17:42:03,382] Register - Step 11: Verify the email address 'auto_test482904@live.com' is displayed
+[2022-07-04 17:42:03,427] ---------------------------------FAILED---------------------------------
+[2022-07-04 17:42:03,427] Register - Step 12: Click Logout link
+[2022-07-04 17:42:04,943] Login - Step 01: Click 'My Account' link
+[2022-07-04 17:42:06,205] Login - Step 02: Enter the data for Email Address textbox with value is 'auto_test482904@live.com'
+[2022-07-04 17:42:06,285] Login - Step 03: Enter the data for Password textbox with value is '246810'
+[2022-07-04 17:42:06,362] Login - Step 04: Click Login button
+[2022-07-04 17:42:07,694] Login - Step 05: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-04 17:42:07,739] ---------------------------------PASSED---------------------------------
+[2022-07-04 17:42:07,739] Login - Step 06: Verify the email address 'auto_test482904@live.com' is displayed
+[2022-07-04 17:42:07,781] ---------------------------------FAILED---------------------------------
+[2022-07-04 17:48:01,858] Register - Step 01: Click the Account link
+[2022-07-04 17:48:02,181] Register - Step 02: Click the Register link
+[2022-07-04 17:48:06,172] Register - Step 03: Enter the data for Firstname textbox with value is 'Cindy'
+[2022-07-04 17:48:06,241] Register - Step 04: Enter the data for Lastname textbox with value is 'test'
+[2022-07-04 17:48:06,314] Register - Step 05: Enter the data for Email Address textbox with value is 'auto_test965368@live.com'
+[2022-07-04 17:48:06,372] Register - Step 06: Enter the data for Password textbox with value is '246810'
+[2022-07-04 17:48:06,425] Register - Step 07: Enter the data for Confirm password textbox with value is '246810'
+[2022-07-04 17:48:06,484] Register - Step 08: Click the Register button
+[2022-07-04 17:48:08,176] Register - Step 09: Verify the register success message is displayed
+[2022-07-04 17:48:08,220] ---------------------------------PASSED---------------------------------
+[2022-07-04 17:48:08,220] Register - Step 10: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-04 17:48:08,256] ---------------------------------PASSED---------------------------------
+[2022-07-04 17:48:08,256] Register - Step 11: Verify the email address 'auto_test965368@live.com' is displayed
+[2022-07-04 17:48:08,301] ---------------------------------FAILED---------------------------------
+[2022-07-04 17:48:08,302] Register - Step 12: Click Logout link
+[2022-07-04 17:48:10,137] Login - Step 01: Click 'My Account' link
+[2022-07-04 17:48:11,448] Login - Step 02: Enter the data for Email Address textbox with value is 'auto_test965368@live.com'
+[2022-07-04 17:48:11,503] Login - Step 03: Enter the data for Password textbox with value is '246810'
+[2022-07-04 17:48:11,604] Login - Step 04: Click Login button
+[2022-07-04 17:48:13,060] Login - Step 05: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-04 17:48:13,110] ---------------------------------PASSED---------------------------------
+[2022-07-04 17:48:13,111] Login - Step 06: Verify the email address 'auto_test965368@live.com' is displayed
+[2022-07-04 17:48:13,165] ---------------------------------FAILED---------------------------------
+[2022-07-04 17:51:43,948] Register - Step 01: Click the Account link
+[2022-07-04 17:51:44,260] Register - Step 02: Click the Register link
+[2022-07-04 17:51:47,540] Register - Step 03: Enter the data for Firstname textbox with value is 'Cindy'
+[2022-07-04 17:51:47,687] Register - Step 04: Enter the data for Lastname textbox with value is 'test'
+[2022-07-04 17:51:47,853] Register - Step 05: Enter the data for Email Address textbox with value is 'auto_test797647@live.com'
+[2022-07-04 17:51:47,916] Register - Step 06: Enter the data for Password textbox with value is '246810'
+[2022-07-04 17:51:47,987] Register - Step 07: Enter the data for Confirm password textbox with value is '246810'
+[2022-07-04 17:51:48,122] Register - Step 08: Click the Register button
+[2022-07-04 17:51:49,787] Register - Step 09: Verify the register success message is displayed
+[2022-07-04 17:51:49,828] ---------------------------------PASSED---------------------------------
+[2022-07-04 17:51:49,828] Register - Step 10: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-04 17:51:49,865] ---------------------------------PASSED---------------------------------
+[2022-07-04 17:51:49,866] Register - Step 11: Verify the email address 'auto_test797647@live.com' is displayed
+[2022-07-04 17:51:49,912] ---------------------------------PASSED---------------------------------
+[2022-07-04 17:51:49,912] Register - Step 12: Click Logout link
+[2022-07-04 17:51:51,402] Login - Step 01: Click 'My Account' link
+[2022-07-04 17:51:52,838] Login - Step 02: Enter the data for Email Address textbox with value is 'auto_test797647@live.com'
+[2022-07-04 17:51:52,905] Login - Step 03: Enter the data for Password textbox with value is '246810'
+[2022-07-04 17:51:52,983] Login - Step 04: Click Login button
+[2022-07-04 17:51:54,333] Login - Step 05: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-04 17:51:54,375] ---------------------------------PASSED---------------------------------
+[2022-07-04 17:51:54,375] Login - Step 06: Verify the email address 'auto_test797647@live.com' is displayed
+[2022-07-04 17:51:54,406] ---------------------------------PASSED---------------------------------
+[2022-07-05 08:34:52,097] Register - Step 01: Click the Account link
+[2022-07-05 08:34:52,403] Register - Step 02: Click the Register link
+[2022-07-05 08:34:58,378] Register - Step 03: Enter the data for Firstname textbox with value is 'Cindy'
+[2022-07-05 08:34:58,478] Register - Step 04: Enter the data for Lastname textbox with value is 'test'
+[2022-07-05 08:34:58,560] Register - Step 05: Enter the data for Email Address textbox with value is 'auto_test635273@live.com'
+[2022-07-05 08:34:58,644] Register - Step 06: Enter the data for Password textbox with value is '246810'
+[2022-07-05 08:34:58,742] Register - Step 07: Enter the data for Confirm password textbox with value is '246810'
+[2022-07-05 08:34:58,868] Register - Step 08: Click the Register button
+[2022-07-05 08:35:00,683] Register - Step 09: Verify the register success message is displayed
+[2022-07-05 08:35:00,728] ---------------------------------PASSED---------------------------------
+[2022-07-05 08:35:00,728] Register - Step 10: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-05 08:35:00,763] ---------------------------------PASSED---------------------------------
+[2022-07-05 08:35:00,764] Register - Step 11: Verify the email address 'auto_test635273@live.com' is displayed
+[2022-07-05 08:35:00,804] ---------------------------------PASSED---------------------------------
+[2022-07-05 08:35:00,804] Register - Step 12: Click Logout link
+[2022-07-05 08:35:02,418] Login - Step 01: Click 'My Account' link
+[2022-07-05 08:35:03,632] Login - Step 02: Enter the data for Email Address textbox with value is 'auto_test635273@live.com'
+[2022-07-05 08:35:03,706] Login - Step 03: Enter the data for Password textbox with value is '246810'
+[2022-07-05 08:35:03,811] Login - Step 04: Click Login button
+[2022-07-05 08:35:05,001] Login - Step 05: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-05 08:35:05,052] ---------------------------------PASSED---------------------------------
+[2022-07-05 08:35:05,052] Login - Step 06: Verify the email address 'auto_test635273@live.com' is displayed
+[2022-07-05 08:35:05,088] ---------------------------------PASSED---------------------------------
+[2022-07-06 11:08:31,111] Register - Step 01: Click the Account link
+[2022-07-06 11:08:31,426] Register - Step 02: Click the Register link
+[2022-07-06 11:08:35,969] Register - Step 03: Enter the data for Firstname textbox with value is 'Cindy'
+[2022-07-06 11:08:36,048] Register - Step 04: Enter the data for Lastname textbox with value is 'test'
+[2022-07-06 11:08:36,133] Register - Step 05: Enter the data for Email Address textbox with value is 'auto_test356989@live.com'
+[2022-07-06 11:08:36,232] Register - Step 06: Enter the data for Password textbox with value is '246810'
+[2022-07-06 11:08:36,322] Register - Step 07: Enter the data for Confirm password textbox with value is '246810'
+[2022-07-06 11:08:36,456] Register - Step 08: Click the Register button
+[2022-07-06 11:08:38,309] Register - Step 09: Verify the register success message is displayed
+[2022-07-06 11:08:38,352] ---------------------------------PASSED---------------------------------
+[2022-07-06 11:08:38,352] Register - Step 10: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-06 11:08:38,394] ---------------------------------PASSED---------------------------------
+[2022-07-06 11:08:38,395] Register - Step 11: Verify the email address 'auto_test356989@live.com' is displayed
+[2022-07-06 11:08:38,447] ---------------------------------PASSED---------------------------------
+[2022-07-06 11:08:38,447] Register - Step 12: Click Logout link
+[2022-07-06 11:08:40,026] Login - Step 01: Click 'My Account' link
+[2022-07-06 11:08:41,210] Login - Step 02: Enter the data for Email Address textbox with value is 'auto_test356989@live.com'
+[2022-07-06 11:08:41,265] Login - Step 03: Enter the data for Password textbox with value is '246810'
+[2022-07-06 11:08:41,396] Login - Step 04: Click Login button
+[2022-07-06 11:08:42,659] Login - Step 05: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-06 11:08:42,699] ---------------------------------PASSED---------------------------------
+[2022-07-06 11:08:42,700] Login - Step 06: Verify the email address 'auto_test356989@live.com' is displayed
+[2022-07-06 11:08:42,741] ---------------------------------PASSED---------------------------------
+[2022-07-06 11:13:39,221] Register - Step 01: Click the Account link
+[2022-07-06 11:13:39,533] Register - Step 02: Click the Register link
+[2022-07-06 11:13:43,685] Register - Step 03: Enter the data for Firstname textbox with value is 'Cindy'
+[2022-07-06 11:13:43,761] Register - Step 04: Enter the data for Lastname textbox with value is 'test'
+[2022-07-06 11:13:43,851] Register - Step 05: Enter the data for Email Address textbox with value is 'auto_test20003@live.com'
+[2022-07-06 11:13:43,933] Register - Step 06: Enter the data for Password textbox with value is '246810'
+[2022-07-06 11:13:44,068] Register - Step 07: Enter the data for Confirm password textbox with value is '246810'
+[2022-07-06 11:13:44,174] Register - Step 08: Click the Register button
+[2022-07-06 11:13:46,154] Register - Step 09: Verify the register success message is displayed
+[2022-07-06 11:13:46,207] ---------------------------------PASSED---------------------------------
+[2022-07-06 11:13:46,208] Register - Step 10: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-06 11:13:46,247] ---------------------------------PASSED---------------------------------
+[2022-07-06 11:13:46,247] Register - Step 11: Verify the email address 'auto_test20003@live.com' is displayed
+[2022-07-06 11:13:46,283] ---------------------------------FAILED---------------------------------
+[2022-07-06 11:13:46,285] Register - Step 12: Click Logout link
+[2022-07-06 11:13:48,026] Login - Step 01: Click 'My Account' link
+[2022-07-06 11:13:49,291] Login - Step 02: Enter the data for Email Address textbox with value is 'auto_test20003@live.com'
+[2022-07-06 11:13:49,355] Login - Step 03: Enter the data for Password textbox with value is '246810'
+[2022-07-06 11:13:49,467] Login - Step 04: Click Login button
+[2022-07-06 11:13:50,839] Login - Step 05: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-06 11:13:50,887] ---------------------------------PASSED---------------------------------
+[2022-07-06 11:13:50,887] Login - Step 06: Verify the email address 'auto_test20003@live.com' is displayed
+[2022-07-06 11:13:50,924] ---------------------------------PASSED---------------------------------
+[2022-07-06 20:58:24,157] Register - Step 01: Click the Account link
+[2022-07-06 20:58:54,264] Login - Step 01: Click 'My Account' link
+[2022-07-06 22:10:05,120] Register - Step 01: Click the Account link
+[2022-07-06 22:10:35,222] Login - Step 01: Click 'My Account' link
+[2022-07-12 09:56:49,751] Register - Step 01: Click the Account link
+[2022-07-12 09:57:19,831] Login - Step 01: Click 'My Account' link
+[2022-07-12 09:58:50,044] Register - Step 01: Click the Account link
+[2022-07-12 09:58:50,350] Register - Step 02: Click the Register link
+[2022-07-12 09:58:54,431] Register - Step 03: Enter the data for Firstname textbox with value is 'Cindy'
+[2022-07-12 09:58:54,505] Register - Step 04: Enter the data for Lastname textbox with value is 'test'
+[2022-07-12 09:58:54,589] Register - Step 05: Enter the data for Email Address textbox with value is 'auto_test678300@live.com'
+[2022-07-12 09:58:54,665] Register - Step 06: Enter the data for Password textbox with value is '246810'
+[2022-07-12 09:58:54,734] Register - Step 07: Enter the data for Confirm password textbox with value is '246810'
+[2022-07-12 09:58:54,849] Register - Step 08: Click the Register button
+[2022-07-12 09:58:56,698] Register - Step 09: Verify the register success message is displayed
+[2022-07-12 09:58:56,752] ---------------------------------PASSED---------------------------------
+[2022-07-12 09:58:56,752] Register - Step 10: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-12 09:58:56,797] ---------------------------------PASSED---------------------------------
+[2022-07-12 09:58:56,798] Register - Step 11: Verify the email address 'auto_test678300@live.com' is displayed
+[2022-07-12 09:58:56,841] ---------------------------------FAILED---------------------------------
+[2022-07-12 09:58:56,842] Register - Step 12: Click Logout link
+[2022-07-12 09:58:58,455] Login - Step 01: Click 'My Account' link
+[2022-07-12 09:58:59,780] Login - Step 02: Enter the data for Email Address textbox with value is 'auto_test678300@live.com'
+[2022-07-12 09:58:59,844] Login - Step 03: Enter the data for Password textbox with value is '246810'
+[2022-07-12 09:58:59,949] Login - Step 04: Click Login button
+[2022-07-12 09:59:01,179] Login - Step 05: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-12 09:59:01,220] ---------------------------------PASSED---------------------------------
+[2022-07-12 09:59:01,220] Login - Step 06: Verify the email address 'auto_test678300@live.com' is displayed
+[2022-07-12 09:59:01,251] ---------------------------------PASSED---------------------------------
+[2022-07-12 16:24:06,547] Register - Step 01: Click the Account link
+[2022-07-12 16:24:06,869] Register - Step 02: Click the Register link
+[2022-07-12 16:24:12,289] Register - Step 03: Enter the data for Firstname textbox with value is 'Cindy'
+[2022-07-12 16:24:12,368] Register - Step 04: Enter the data for Lastname textbox with value is 'test'
+[2022-07-12 16:24:12,442] Register - Step 05: Enter the data for Email Address textbox with value is 'auto_test202349@live.com'
+[2022-07-12 16:24:12,519] Register - Step 06: Enter the data for Password textbox with value is '246810'
+[2022-07-12 16:24:12,590] Register - Step 07: Enter the data for Confirm password textbox with value is '246810'
+[2022-07-12 16:24:12,697] Register - Step 08: Click the Register button
+[2022-07-12 16:24:14,574] Register - Step 09: Verify the register success message is displayed
+[2022-07-12 16:24:14,625] ---------------------------------PASSED---------------------------------
+[2022-07-12 16:24:14,625] Register - Step 10: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-12 16:24:14,662] ---------------------------------PASSED---------------------------------
+[2022-07-12 16:24:14,662] Register - Step 11: Verify the email address 'auto_test202349@live.com' is displayed
+[2022-07-12 16:24:14,695] ---------------------------------FAILED---------------------------------
+[2022-07-12 16:24:14,696] Register - Step 12: Click Logout link
+[2022-07-12 16:24:16,332] Login - Step 01: Click 'My Account' link
+[2022-07-12 16:24:17,802] Login - Step 02: Enter the data for Email Address textbox with value is 'auto_test202349@live.com'
+[2022-07-12 16:24:17,879] Login - Step 03: Enter the data for Password textbox with value is '246810'
+[2022-07-12 16:24:17,949] Login - Step 04: Click Login button
+[2022-07-12 16:24:19,452] Login - Step 05: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-12 16:24:19,500] ---------------------------------PASSED---------------------------------
+[2022-07-12 16:24:19,500] Login - Step 06: Verify the email address 'auto_test202349@live.com' is displayed
+[2022-07-12 16:24:19,535] ---------------------------------PASSED---------------------------------
+[2022-07-13 16:10:24,224] Register - Step 01: Click the Account link
+[2022-07-13 16:10:24,541] Register - Step 02: Click the Register link
+[2022-07-13 16:10:30,162] Register - Step 03: Enter the data for Firstname textbox with value is 'Cindy'
+[2022-07-13 16:10:30,242] Register - Step 04: Enter the data for Lastname textbox with value is 'test'
+[2022-07-13 16:10:30,305] Register - Step 05: Enter the data for Email Address textbox with value is 'auto_test553716@live.com'
+[2022-07-13 16:10:30,370] Register - Step 06: Enter the data for Password textbox with value is '246810'
+[2022-07-13 16:10:30,418] Register - Step 07: Enter the data for Confirm password textbox with value is '246810'
+[2022-07-13 16:10:30,462] Register - Step 08: Click the Register button
+[2022-07-13 16:10:32,650] Register - Step 09: Verify the register success message is displayed
+[2022-07-13 16:10:32,702] ---------------------------------PASSED---------------------------------
+[2022-07-13 16:10:32,702] Register - Step 10: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-13 16:10:32,739] ---------------------------------PASSED---------------------------------
+[2022-07-13 16:10:32,740] Register - Step 11: Verify the email address 'auto_test553716@live.com' is displayed
+[2022-07-13 16:10:32,774] ---------------------------------FAILED---------------------------------
+[2022-07-13 16:10:32,775] Register - Step 12: Click Logout link
+[2022-07-13 16:10:35,216] Login - Step 01: Click 'My Account' link
+[2022-07-13 16:10:36,574] Login - Step 02: Enter the data for Email Address textbox with value is 'auto_test553716@live.com'
+[2022-07-13 16:10:36,644] Login - Step 03: Enter the data for Password textbox with value is '246810'
+[2022-07-13 16:10:36,713] Login - Step 04: Click Login button
+[2022-07-13 16:10:38,036] Login - Step 05: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-13 16:10:38,080] ---------------------------------PASSED---------------------------------
+[2022-07-13 16:10:38,080] Login - Step 06: Verify the email address 'auto_test553716@live.com' is displayed
+[2022-07-13 16:10:38,112] ---------------------------------PASSED---------------------------------
+[2022-07-13 16:13:15,213] Register - Step 01: Click the Account link
+[2022-07-13 16:13:15,515] Register - Step 02: Click the Register link
+[2022-07-13 16:13:20,371] Register - Step 03: Enter the data for Firstname textbox with value is 'Cindy'
+[2022-07-13 16:13:20,446] Register - Step 04: Enter the data for Lastname textbox with value is 'test'
+[2022-07-13 16:13:20,532] Register - Step 05: Enter the data for Email Address textbox with value is 'auto_test798460@live.com'
+[2022-07-13 16:13:20,624] Register - Step 06: Enter the data for Password textbox with value is '246810'
+[2022-07-13 16:13:20,702] Register - Step 07: Enter the data for Confirm password textbox with value is '246810'
+[2022-07-13 16:13:20,821] Register - Step 08: Click the Register button
+[2022-07-13 16:13:22,542] Register - Step 09: Verify the register success message is displayed
+[2022-07-13 16:13:22,591] ---------------------------------FAILED---------------------------------
+[2022-07-13 16:13:22,591] Register - Step 10: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-13 16:13:22,638] ---------------------------------PASSED---------------------------------
+[2022-07-13 16:13:22,638] Register - Step 11: Verify the email address 'auto_test798460@live.com' is displayed
+[2022-07-13 16:13:22,672] ---------------------------------PASSED---------------------------------
+[2022-07-13 16:13:22,673] Register - Step 12: Click Logout link
+[2022-07-13 16:13:24,292] Login - Step 01: Click 'My Account' link
+[2022-07-13 16:13:25,526] Login - Step 02: Enter the data for Email Address textbox with value is 'auto_test798460@live.com'
+[2022-07-13 16:13:25,596] Login - Step 03: Enter the data for Password textbox with value is '246810'
+[2022-07-13 16:13:25,717] Login - Step 04: Click Login button
+[2022-07-13 16:13:26,979] Login - Step 05: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-13 16:13:27,022] ---------------------------------FAILED---------------------------------
+[2022-07-13 16:13:27,022] Login - Step 06: Verify the email address 'auto_test798460@live.com' is displayed
+[2022-07-13 16:13:27,061] ---------------------------------PASSED---------------------------------
+[2022-07-13 16:17:15,440] Register - Step 01: Click the Account link
+[2022-07-13 16:17:15,747] Register - Step 02: Click the Register link
+[2022-07-13 16:17:21,088] Register - Step 03: Enter the data for Firstname textbox with value is 'Cindy'
+[2022-07-13 16:17:21,182] Register - Step 04: Enter the data for Lastname textbox with value is 'test'
+[2022-07-13 16:17:21,236] Register - Step 05: Enter the data for Email Address textbox with value is 'auto_test451614@live.com'
+[2022-07-13 16:17:21,348] Register - Step 06: Enter the data for Password textbox with value is '246810'
+[2022-07-13 16:17:21,404] Register - Step 07: Enter the data for Confirm password textbox with value is '246810'
+[2022-07-13 16:17:21,522] Register - Step 08: Click the Register button
+[2022-07-13 16:17:23,421] Register - Step 09: Verify the register success message is displayed
+[2022-07-13 16:17:23,470] ---------------------------------FAILED---------------------------------
+[2022-07-13 16:17:23,470] ***********Failed at Step 09***********
+[2022-07-13 16:17:23,471] Register - Step 10: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-13 16:17:23,516] ---------------------------------PASSED---------------------------------
+[2022-07-13 16:17:23,516] Register - Step 11: Verify the email address 'auto_test451614@live.com' is displayed
+[2022-07-13 16:17:23,565] ---------------------------------PASSED---------------------------------
+[2022-07-13 16:17:23,565] Register - Step 12: Click Logout link
+[2022-07-13 16:17:25,234] Login - Step 01: Click 'My Account' link
+[2022-07-13 16:17:26,388] Login - Step 02: Enter the data for Email Address textbox with value is 'auto_test451614@live.com'
+[2022-07-13 16:17:26,436] Login - Step 03: Enter the data for Password textbox with value is '246810'
+[2022-07-13 16:17:26,548] Login - Step 04: Click Login button
+[2022-07-13 16:17:28,249] Login - Step 05: Verify the first name 'Cindy' and the lastname 'test' are displayed
+[2022-07-13 16:17:28,300] ---------------------------------FAILED---------------------------------
+[2022-07-13 16:17:28,300] Login - Step 06: Verify the email address 'auto_test451614@live.com' is displayed
+[2022-07-13 16:17:28,351] ---------------------------------PASSED---------------------------------
+[2022-07-13 16:26:00,783] Register - Step 01: Click the Account link
+[2022-07-13 16:26:01,080] Register - Step 02: Click the Register link
+[2022-07-13 16:26:06,635] Register - Step 03: Enter the data for Firstname textbox with value is 'Cindy'
+[2022-07-13 16:26:06,736] Register - Step 04: Enter the data for Lastname textbox with value is 'test'
+[2022-07-13 16:26:06,836] Register - Step 05: Enter the data for Email Address textbox with value is 'auto_test91386@live.com'
+[2022-07-13 16:26:06,884] Register - Step 06: Enter the data for Password textbox with value is '246810'
+[2022-07-13 16:26:06,954] Register - Step 07: Enter the data for Confirm password textbox with value is '246810'
+[2022-07-13 16:26:07,087] Register - Step 08: Click the Register button
+[2022-07-13 16:26:09,575] Register - Step 09: Verify the register success message is displayed
+[2022-07-13 16:26:09,767] Login - Step 01: Click 'My Account' link
+[2022-07-13 16:26:12,338] Login - Step 02: Enter the data for Email Address textbox with value is 'auto_test91386@live.com'
+[2022-07-14 15:12:47,535] Register - Step 01: Click the Account link
+[2022-07-14 15:12:47,847] Register - Step 02: Click the Register link
+[2022-07-14 15:12:55,782] Register - Step 03: Enter the data for Firstname textbox with value is 'Cindy'
+[2022-07-14 15:12:55,861] Register - Step 04: Enter the data for Lastname textbox with value is 'test'
+[2022-07-14 15:12:55,922] Register - Step 05: Enter the data for Email Address textbox with value is 'auto_test131985@live.com'
+[2022-07-14 15:12:55,975] Register - Step 06: Enter the data for Password textbox with value is '246810'
+[2022-07-14 15:12:56,034] Register - Step 07: Enter the data for Confirm password textbox with value is '246810'
+[2022-07-14 15:12:56,122] Register - Step 08: Click the Register button
+[2022-07-14 15:12:57,780] Register - Step 09: Verify the register success message is displayed
+[2022-07-14 15:12:57,949] Login - Step 01: Click 'My Account' link
+[2022-07-14 15:12:58,771] Login - Step 02: Enter the data for Email Address textbox with value is 'auto_test131985@live.com'
+[2022-07-14 15:17:12,623] Register - Step 01: Click the Account link
+[2022-07-14 15:17:12,926] Register - Step 02: Click the Register link
+[2022-07-14 15:17:16,869] Register - Step 03: Enter the data for Firstname textbox with value is 'Cindy'
+[2022-07-14 15:17:16,939] Register - Step 04: Enter the data for Lastname textbox with value is 'test'
+[2022-07-14 15:17:17,000] Register - Step 05: Enter the data for Email Address textbox with value is 'auto_test75126@live.com'
+[2022-07-14 15:17:17,053] Register - Step 06: Enter the data for Password textbox with value is '246810'
+[2022-07-14 15:17:17,108] Register - Step 07: Enter the data for Confirm password textbox with value is '246810'
+[2022-07-14 15:17:17,210] Register - Step 08: Click the Register button
+[2022-07-14 15:17:19,159] Register - Step 09: Verify the register success message is displayed
+[2022-07-14 15:17:19,325] Login - Step 01: Click 'My Account' link
+[2022-07-14 15:17:20,188] Login - Step 02: Enter the data for Email Address textbox with value is 'auto_test75126@live.com'
+[2022-07-14 15:51:33,691] Register - Step 01: Click the Account link
+[2022-07-14 15:51:34,009] Register - Step 02: Click the Register link
+[2022-07-14 15:51:37,555] Register - Step 03: Enter the data for Firstname textbox with value is 'Cindy'
+[2022-07-14 15:51:37,632] Register - Step 04: Enter the data for Lastname textbox with value is 'test'
+[2022-07-14 15:51:37,687] Register - Step 05: Enter the data for Email Address textbox with value is 'auto_test420389@live.com'
+[2022-07-14 15:51:37,739] Register - Step 06: Enter the data for Password textbox with value is '246810'
+[2022-07-14 15:51:37,788] Register - Step 07: Enter the data for Confirm password textbox with value is '246810'
+[2022-07-14 15:51:37,841] Register - Step 08: Click the Register button
+[2022-07-14 15:51:39,495] Register - Step 09: Verify the register success message is displayed
+[2022-07-14 15:51:39,548] Login - Step 01: Click 'My Account' link
+[2022-07-14 15:51:40,430] Login - Step 02: Enter the data for Email Address textbox with value is 'auto_test420389@live.com'
+[2022-07-14 16:39:27,823] Register - Step 01: Click the Account link
+[2022-07-14 16:39:28,142] Register - Step 02: Click the Register link
+[2022-07-14 16:39:32,463] Register - Step 03: Enter the data for Firstname textbox with value is 'Cindy'
+[2022-07-14 16:39:32,545] Register - Step 04: Enter the data for Lastname textbox with value is 'test'
+[2022-07-14 16:39:32,605] Register - Step 05: Enter the data for Email Address textbox with value is 'auto_test98768@live.com'
+[2022-07-14 16:39:32,658] Register - Step 06: Enter the data for Password textbox with value is '246810'
+[2022-07-14 16:39:32,713] Register - Step 07: Enter the data for Confirm password textbox with value is '246810'
+[2022-07-14 16:39:32,776] Register - Step 08: Click the Register button
+[2022-07-14 16:39:34,821] Register - Step 09: Verify the register success message is displayed
+[2022-07-14 16:43:54,955] Login - Step 01: Click 'My Account' link

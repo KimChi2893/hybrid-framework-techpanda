@@ -8,8 +8,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-import commons.BasePage;
-import pageUIs.user.HomePageUI;
 
 public class HomePageObject extends BasePageFactory{
 

@@ -3,7 +3,6 @@ package pageObjects.admin;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
-import pageObjects.navigation.PageGeneratorManager;
 import pageUIs.admin.AdminManageCustomerPageUI;
 
 public class AdminManageCustomerPageObject extends BasePage{

@@ -33,6 +33,8 @@ public class GlobalConstants {
 	// Browser logs/ Extension
 	public static final String BROWSER_LOG_PATH = PROJECT_PATH + "/browserLogs/";
 	public static final String BROWSER_EXTENSION_PATH = PROJECT_PATH + "/browserExtensions/";
+	public static final String REPORTNG_SCREENSHOT = PROJECT_PATH + "/reportNGImages/";
+	
 	
 	// html report Folder
 	public static final String REPORTNG_PATH = PROJECT_PATH + "/htmlReportNG/";
